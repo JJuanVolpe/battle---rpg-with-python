@@ -11,3 +11,4 @@ class Spell:
         low = self.dmg - 15
         high = self.dmg + 15
         return random.randint(low, high)
+
