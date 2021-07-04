@@ -23,28 +23,36 @@ hipotion = Item("Hi-potion", "potion", "heals for 100 HP", 1000)
 superpotion = Item("Super potion", "potion", "Heals  500 HP", 500)
 elixer = Item("Elixer", "elixer", "Fully restores HP/MP of one party member", 9999)
 hielixer = Item("MegaElixer", "elixer", "Fully restores party´s HP/MP", 9999)
-
 grenade = Item("Grenade", "attack", "Deals 500 damage", 500)
+
+# Instantiate List of Objects
 
 player_spells = [fire, thunder, blizzard, meteor, cure, cura]
 enemy_spells = [fire, meteor, curaga]
+
+# Instantiate List of Items
 
 player_items = [{"item": potion, "quantity": 15}, {"item": hipotion, "quantity": 5},
                 {"item": superpotion, "quantity": 5}, {"item": elixer, "quantity": 5},
                 {"item": hielixer, "quantity": 5}, {"item": grenade, "quantity": 5}]
 
 
-# Instancio participantes
+# Instantiate players
 player1 = Person("Valos :", 3260, 132, 300, 34, player_spells, player_items)
 player2 = Person("Nick  :", 4160, 188, 311, 34, player_spells, player_items)
 player3 = Person("Robot :", 3089, 174, 288, 34, player_spells, player_items)
-enemy1 = Person("Imp  ", 1250, 130, 565, 325, enemy_spells, [])
 
+# Instantiate enemies
+enemy1 = Person("Imp  ", 1250, 130, 565, 325, enemy_spells, [])
 enemy2 = Person("Magus", 18200, 701, 525, 25, enemy_spells, [])
 enemy3 = Person("Imp  ", 1250, 130, 565, 325, enemy_spells, [])
+
+# Instantiate List of participants
 players = [player1, player2, player3]
 enemies = [enemy1, enemy2, enemy3]
-running = True
+
+
+running = True    #Allways start, thanks true
 i = 0
 
 print(bcolors.FAIL + bcolors.BOLD + "AN ENEMY ATTACKS!" + bcolors.ENDC)
@@ -55,6 +63,7 @@ while running:
     print("\n\n")
 
     print(" NAME" + bcolors.OKGREEN + "   HP" + bcolors.ENDC + "                                        " + bcolors.OKBLUE + "MP" + bcolors.ENDC)
+    
     for player in players:
         player.get_stats()
 
