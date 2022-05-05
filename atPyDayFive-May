@@ -1,0 +1,43 @@
+import csv
+import json as js
+
+def create_dict(line):
+    """Esta funcion recibe el dataset referente a lagos, y devuelve un diccionario con el conjunto de jugadores
+          (en formato csv) ..
+      """
+    print(line)
+
+
+
+
+def clean_title(titles):
+    """Esta funcion recibe el titulo y reemplaza en las claves los acentos
+    """
+    titles[1].replace('2','0')
+    for word in titles:
+        print(word)
+    return titles
+
+
+def get_csv_dataset(file):
+    """Esta funcion recibe el dataset referente a lagos, y devuelve un nuevo archivo
+        (en formato csv)
+
+    """
+    with open(file, 'r') as data_set, \
+            open('data.json', 'w') as file:
+        file_reader = csv.reader(data_set)
+
+        encabezados = clean_title(file_reader.__next__())
+        new_dict = {t: [] for t in encabezados}
+
+        js.dump(encabezados, file)
+        for line in file_reader:
+            create_dict(line)
+
+        print(encabezados)
+        print(new_dict)
+
+
+dataset = '/home/juan/python2022/Proyecto-Juego/Extra code - Files to learn/Lagos Argentina - Hoja 1.csv'
+get_csv_dataset(dataset)
