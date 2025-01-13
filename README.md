@@ -4,6 +4,7 @@
 This is my first project using Python, where I explored essential programming concepts like data structures, control flow, and logical operations. The project helped me understand the core principles of Python and programming in general.
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png)
+
 ⚡ Developed in Udemy, "The Complete Python 3 Course: Beginner to Advanced!"
 
 
@@ -42,9 +43,12 @@ To create a simple command-line application that demonstrates the use of data st
 - Using loops and conditions to manage program flow.
 
 ## Conclusion
-This project was a foundational experience in Python programming, solidifying my understanding of basic programming constructs. It sets the stage for more complex projects in the future.
+This project was a foundational experience in Python programming, 
+solidifying my understanding of basic programming constructs. 
+It sets the stage for more complex projects in the future.
 
 ## Acknowledgments
 Thanks to the Python community and numerous online resources for their guidance and support.
+```
 
 👨‍💻
