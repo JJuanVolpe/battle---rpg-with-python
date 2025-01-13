@@ -1,4 +1,4 @@
-# My First Python Project
+# My First Python Project 👨‍💻
 
 ## Project Overview
 This is my first project using Python, where I explored essential programming concepts like data structures, control flow, and logical operations. The project helped me understand the core principles of Python and programming in general.
@@ -50,5 +50,3 @@ It sets the stage for more complex projects in the future.
 ## Acknowledgments
 Thanks to the Python community and numerous online resources for their guidance and support.
 ```
-
-👨‍💻
